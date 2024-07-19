@@ -9,11 +9,10 @@ readme = "README.md"
 python = "^3.12"
 confluent-kafka = "^2.5.0"
 pydantic = "^2.8.2"
+aiokafka = "^0.11.0"
 
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-[tool.poetry.packages]
-hello_kafka = { from = "src" }
