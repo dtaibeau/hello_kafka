@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "hello-kafka"
+version = "0.1.0"
+description = ""
+authors = ["Delphine Tai-Beauchamp <delphinetaibeauchamp@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+confluent-kafka = "^2.5.0"
+pydantic = "^2.8.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.packages]
+hello_kafka = { from = "src" }
